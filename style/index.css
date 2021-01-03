@@ -1,0 +1,157 @@
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+div:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.faq-accordion-card-section {
+  width: 100%;
+  height: 720px;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* A height of 50rem for ".faq-accordion-card" */
+.faq-accordion-card {
+  width: 70%;
+  min-height: 50rem;
+  background-color: #fff;
+  border-radius: 4rem;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.illustrations {
+  /* height: auto; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Atbox {
+  position: absolute;
+  max-width: 26%;
+  height: 100px;
+  left: 4%;
+  bottom: 27%;
+}
+
+.illustrationBox {
+  width: 100%;
+}
+
+.mobile-woman {
+  position: absolute;
+  top: -100%;
+}
+
+/* height:170%
+top:-62% */
+
+.info {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.info-box {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.info-box > p,
+div {
+  margin-bottom: 1rem;
+}
+
+.normal {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
+  display: inline-block;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+.faqBox {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.faq {
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(237, 12%, 33%);
+}
+
+@media only screen and (max-width: 900px) {
+  .mobile-woman {
+    height: 170%;
+    top: -62%;
+  }
+
+  .Atbox {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .faq-accordion-card {
+    display: flex;
+  }
+
+  .illustrations,
+  .info {
+    width: 49%;
+  }
+
+  /* background-position: top 80% left 130%, top 20% left -140%; */
+
+  .illustrations {
+    height: 100%;
+    background-image: url(../images/bg-pattern-desktop.svg),
+      url(../images/illustration-woman-online-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .info {
+    text-align: left;
+    padding: 5rem;
+  }
+
+  .faqBox {
+    text-align: left;
+  }
+
+  .mobile-woman,
+  .mobile-bg-pattern {
+    display: none;
+  }
+}
